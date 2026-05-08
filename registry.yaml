@@ -3,4 +3,4 @@
 #   mise use -g aqua:oracle/sqlcl@26.1.0
 packages:
   oracle/sqlcl:
-    registry: oracle/sqlcl/registry.yaml
+    registry: pkgs/oracle/sqlcl/registry.yaml
