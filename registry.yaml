@@ -1,6 +1,0 @@
-# Usage idea:
-#   MISE_AQUA_REGISTRY_URL=https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/registry.yaml
-#   mise use -g aqua:oracle/sqlcl@26.1.0
-packages:
-  oracle/sqlcl:
-    registry: pkgs/oracle/sqlcl/registry.yaml
