@@ -1,0 +1,352 @@
+packages:
+  - type: http
+    repo_owner: oracle
+    repo_name: sqlcl
+    description: Oracle SQLcl
+    url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-{{.Version}}.zip
+    format: zip
+    complete_windows_ext: true
+    supported_envs:
+      - linux/amd64
+      - linux/arm64
+      - darwin/amd64
+      - darwin/arm64
+      - windows/amd64
+      - windows/arm64
+    files:
+      - name: sql
+        src: sqlcl/bin/sql
+    version_overrides:
+      - version_constraint: 'Version == "26.1.0" || Version == "26.1.0.086.1709"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-26.1.0.086.1709.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/26.1.0.086.1709.sha1
+          url: checksums/26.1.0.086.1709.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "25.4.1" || Version == "25.4.1.022.0618"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.4.1.022.0618.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.4.1.022.0618.sha1
+          url: checksums/25.4.1.022.0618.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "25.4.0" || Version == "25.4.0.346.1855"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.4.0.346.1855.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.4.0.346.1855.sha1
+          url: checksums/25.4.0.346.1855.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "25.3.2" || Version == "25.3.2.317.1117"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.3.2.317.1117.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.3.2.317.1117.sha1
+          url: checksums/25.3.2.317.1117.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "25.3.1" || Version == "25.3.1.311.1257"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.3.1.311.1257.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.3.1.311.1257.sha1
+          url: checksums/25.3.1.311.1257.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "25.3.0" || Version == "25.3.0.274.1210"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.3.0.274.1210.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.3.0.274.1210.sha1
+          url: checksums/25.3.0.274.1210.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "25.2.2" || Version == "25.2.2.199.0918"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.2.2.199.0918.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.2.2.199.0918.sha256
+          url: checksums/25.2.2.199.0918.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "25.2.1" || Version == "25.2.1.195.1751"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.2.1.195.1751.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.2.1.195.1751.sha256
+          url: checksums/25.2.1.195.1751.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "25.2.0" || Version == "25.2.0.184.2054"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.2.0.184.2054.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.2.0.184.2054.sha256
+          url: checksums/25.2.0.184.2054.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "25.1.1" || Version == "25.1.1.113.2054"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.1.1.113.2054.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.1.1.113.2054.sha256
+          url: checksums/25.1.1.113.2054.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "25.1.0" || Version == "25.1.0.101.2353"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-25.1.0.101.2353.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/25.1.0.101.2353.sha256
+          url: checksums/25.1.0.101.2353.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.4.4" || Version == "24.4.4.086.1931"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.4.4.086.1931.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.4.4.086.1931.sha256
+          url: checksums/24.4.4.086.1931.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.4.3" || Version == "24.4.3.070.2106"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.4.3.070.2106.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.4.3.070.2106.sha256
+          url: checksums/24.4.3.070.2106.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.4.1" || Version == "24.4.1.042.1221"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.4.1.042.1221.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.4.1.042.1221.sha256
+          url: checksums/24.4.1.042.1221.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.3.2" || Version == "24.3.2.330.1718"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.3.2.330.1718.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.3.2.330.1718.sha256
+          url: checksums/24.3.2.330.1718.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.3.1" || Version == "24.3.1.311.1631"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.3.1.311.1631.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.3.1.311.1631.sha256
+          url: checksums/24.3.1.311.1631.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.3.0" || Version == "24.3.0.285.0530"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.3.0.285.0530.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.3.0.285.0530.sha256
+          url: checksums/24.3.0.285.0530.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.2.0" || Version == "24.2.0.180.1721"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.2.0.180.1721.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.2.0.180.1721.sha256
+          url: checksums/24.2.0.180.1721.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "24.1.0" || Version == "24.1.0.087.0929"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-24.1.0.087.0929.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/24.1.0.087.0929.sha256
+          url: checksums/24.1.0.087.0929.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "23.4.0" || Version == "23.4.0.023.2321"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-23.4.0.023.2321.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/23.4.0.023.2321.sha256
+          url: checksums/23.4.0.023.2321.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "23.3.0" || Version == "23.3.0.270.1251"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-23.3.0.270.1251.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/23.3.0.270.1251.sha256
+          url: checksums/23.3.0.270.1251.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "23.2.0" || Version == "23.2.0.178.1027"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-23.2.0.178.1027.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/23.2.0.178.1027.sha256
+          url: checksums/23.2.0.178.1027.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "23.1.0" || Version == "23.1.0.089.0929"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-23.1.0.089.0929.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/23.1.0.089.0929.sha256
+          url: checksums/23.1.0.089.0929.sha256
+          file_format: raw
+          algorithm: sha256
+      - version_constraint: 'Version == "22.4.0" || Version == "22.4.0.342.1212"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-22.4.0.342.1212.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/22.4.0.342.1212.sha1
+          url: checksums/22.4.0.342.1212.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "22.2.1" || Version == "22.2.1.201.1451"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-22.2.1.201.1451.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/22.2.1.201.1451.sha1
+          url: checksums/22.2.1.201.1451.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "22.2.0" || Version == "22.2.0.172.1718"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-22.2.0.172.1718.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/22.2.0.172.1718.sha1
+          url: checksums/22.2.0.172.1718.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "22.1.1" || Version == "22.1.1.131.0820"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-22.1.1.131.0820.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/22.1.1.131.0820.sha1
+          url: checksums/22.1.1.131.0820.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "22.1.0" || Version == "22.1.0.90.1611"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-22.1.0.90.1611.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/22.1.0.90.1611.sha1
+          url: checksums/22.1.0.90.1611.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.4.1" || Version == "21.4.1.17.1458"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.4.1.17.1458.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.4.1.17.1458.sha1
+          url: checksums/21.4.1.17.1458.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.4.0" || Version == "21.4.0.348.1716"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.4.0.348.1716.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.4.0.348.1716.sha1
+          url: checksums/21.4.0.348.1716.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.3.3" || Version == "21.3.3.322.1724"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.3.3.322.1724.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.3.3.322.1724.sha1
+          url: checksums/21.3.3.322.1724.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.3.2" || Version == "21.3.2.287.1503"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.3.2.287.1503.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.3.2.287.1503.sha1
+          url: checksums/21.3.2.287.1503.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.3.1" || Version == "21.3.1.281.1748"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.3.1.281.1748.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.3.1.281.1748.sha1
+          url: checksums/21.3.1.281.1748.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.2.2" || Version == "21.2.2.223.0914"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.2.2.223.0914.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.2.2.223.0914.sha1
+          url: checksums/21.2.2.223.0914.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.2.1" || Version == "21.2.1.195.1252"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.2.1.195.1252.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.2.1.195.1252.sha1
+          url: checksums/21.2.1.195.1252.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.2.0" || Version == "21.2.0.174.2245"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.2.0.174.2245.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.2.0.174.2245.sha1
+          url: checksums/21.2.0.174.2245.sha1
+          file_format: raw
+          algorithm: sha1
+      - version_constraint: 'Version == "21.1.1" || Version == "21.1.1.113.1704"'
+        url: https://download.oracle.com/otn_software/java/sqldeveloper/sqlcl-21.1.1.113.1704.zip
+        checksum:
+          enabled: true
+          type: http
+          #url: https://raw.githubusercontent.com/jasonlyle88/aqua-repo/main/oracle/sqlcl/checksums/21.1.1.113.1704.sha1
+          url: checksums/21.1.1.113.1704.sha1
+          file_format: raw
+          algorithm: sha1
